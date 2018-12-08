@@ -1,0 +1,10 @@
+{
+  "name": "svgize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "author": "Daiki Iizuka",
+  "license": "MIT"
+}
