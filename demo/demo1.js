@@ -1,21 +1,19 @@
 const fs = require('fs')
 const {createSvg} = require('../lib/index.js')
 
-const style = `
-  <style>
-    .source text {
-      fill: #888888;
-      font-size: 11px;
-      font-weight: 400;
-      text-decoration: none;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-    .source text:hover {
-      text-decoration: underline;
-      fill: #2962FF;
-    }
-  </style>
-`
+const style = [
+  `.source text {
+    fill: #888888;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }`,
+  `.source text:hover {
+    text-decoration: underline;
+    fill: #2962FF;
+  }`
+]
 
 const main = (srcUrl) => {
   const image = new Buffer(fs.readFileSync(srcUrl)).toString('base64')

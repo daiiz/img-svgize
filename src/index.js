@@ -34,10 +34,15 @@ const renderExternals = externals => {
   return res.join('\n')
 }
 
-const renderStyleTag = (style) => {
-  const res = []
-  if (style) res.push(style)
-  return res.join('\n')
+const renderStyleTag = (styles=[]) => {
+  const style = `
+    <defs>
+      <style type="text/css"><![CDATA[
+        ${styles.join('\n')}
+      ]]></style>
+    </defs>
+  `
+  return style
 }
 
 const createATag = ({width, height, x, y, url, text, className}) => {
