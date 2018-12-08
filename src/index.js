@@ -95,6 +95,6 @@ export function createSvg (dataURI, {width, height, className, style, dataset, e
         width="${width}" height="${height}" x="0" y="0"
         xlink:href="${dataURI}">
       </image>
-      ${renderExternals(externals)}
+      ${externals ? renderExternals(externals) : ''}
     </svg>`, 4)
 }
