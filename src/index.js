@@ -94,7 +94,7 @@ export function createSvg (dataURI, {width, height, className, style, dataset, e
       viewBox="0 0 ${width} ${height}"
       width="${width}" height="${height}"
       class="${className}" ${dataAttrs.join(' ')}>
-      ${renderStyleTag(style)}
+      ${style ? renderStyleTag(style) : ''}
       <image
         xmlns:xlink="${xmlns.xlink}"
         width="${width}" height="${height}" x="0" y="0"
