@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src/ --out-dir lib/",
-    "demo": "node ./demo/demo1.js  > res/demo1.svg",
+    "demo0": "node ./demo/demo0.js  > res/demo0.svg",
+    "demo1": "node ./demo/demo1.js  > res/demo1.svg",
     "postinstall": "npm run build"
   },
   "author": "Daiki Iizuka",
