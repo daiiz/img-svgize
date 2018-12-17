@@ -2,3 +2,4 @@ node_modules/
 lib/
 res/*
 !res/.gitkeep
+*.tgz
