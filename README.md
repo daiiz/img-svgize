@@ -1,9 +1,7 @@
 # img-svgize
-Create a svg-screenshot-style svg text from dataURI image.
+Create a svg-screenshot-style svg image from dataURI image.
 
-By including accurate `xmlns`, `viewBox`, etc., svg images generated can also be displayed with an `<img>` element. Optionally you can embed external links in svg images. When these are displayed in an `<object>` or a `<iframe>` element, embedded  anchor links can be clicked.
-
-It works on both server (Node.js) and client side js.
+By including accurate `xmlns`, `viewBox`, etc., svg images can be show with `<img>` elements. You can also embed external links in svg. When svg displayed with `<object>` or `<iframe>` elements, embedded  anchor are clickable.
 
 ## Installation
 ```

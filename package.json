@@ -1,6 +1,6 @@
 {
   "name": "img-svgize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a svg-screenshot-style (displayable with img element) svg from dataURI image",
   "main": "lib/index.js",
   "scripts": {
