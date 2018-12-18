@@ -1,7 +1,7 @@
 {
   "name": "img-svgize",
-  "version": "1.0.1",
-  "description": "Create a svg-screenshot-style (displayable with img element) svg from dataURI image",
+  "version": "1.0.2",
+  "description": "Create a svg-screenshot-style svg from dataURI image",
   "main": "lib/index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src/ --out-dir lib/",
@@ -26,5 +26,8 @@
     "lib",
     "package.json",
     "README.md"
+  ],
+  "keywords": [
+    "svg"
   ]
 }

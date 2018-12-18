@@ -1,7 +1,7 @@
 # img-svgize
 Create a svg-screenshot-style svg image from dataURI image.
 
-By including accurate `xmlns`, `viewBox`, etc., svg images can be show with `<img>` elements. You can also embed external links in svg. When svg displayed with `<object>` or `<iframe>` elements, embedded  anchor are clickable.
+By including accurate `xmlns`, `viewBox`, etc., svg images can be show with `<img>` elements. You can also embed external links in svg. When svg displayed with `<object>` or `<iframe>` elements, embedded anchors are clickable.
 
 ## Installation
 ```
