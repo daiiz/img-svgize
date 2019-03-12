@@ -57,7 +57,7 @@ const createATag = ({width, height, x, y, url, text, className}) => {
     <a
       xmlns:xlink="${xmlns.xlink}"
       xlink:href="${url}"
-      class="${className}"
+      class="${className || ''}"
       target="_blank"
       style="cursor: pointer;">
       ${rectText}
@@ -79,7 +79,6 @@ const createImgTag = ({width, height, x, y, url, className}) => {
 }
 
 export function createSvg (dataURI, {width, height, className, style, dataset, externals}) {
-  if (!className) className = ''
   if (!dataURI.startsWith('data:image/')) return ''
   let dataAttrs = []
   if (dataset) {
@@ -93,7 +92,7 @@ export function createSvg (dataURI, {width, height, className, style, dataset, e
       xmlns="${xmlns.svg}"
       viewBox="0 0 ${width} ${height}"
       width="${width}" height="${height}"
-      class="${className}" ${dataAttrs.join(' ')}>
+      class="${className || ''}" ${dataAttrs.join(' ')}>
       ${style ? renderStyleTag(style) : ''}
       <image
         xmlns:xlink="${xmlns.xlink}"
